@@ -1,0 +1,84 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+
+//Custom Styles Here
+	
+.main
+	padding: 5%
+	display: grid
+	height: 100% !important
+	
+.content
+	justify-self: center
+	align-self: center
+	height: 100%
+	font-size: 80px
+	ul
+		list-style: none
+		display: grid
+		grid-template-columns: auto auto auto auto
+		grid-gap: 34px
+	.days
+		font-family: "TTTravelsNextBlack", sans-serif
+	.hours
+		font-family: "TTTravelsNextBold", sans-serif
+	.min
+		font-family: "TTTravelsNextMedium", sans-serif
+	.sec
+		font-family: "TTTravelsNextLight", sans-serif
+	
+.header
+	display: grid
+	grid-template-columns: 1fr 1fr
+	height: 46px
+	
+.corner
+	justify-self: end
+
+.footer
+	display: grid
+	align-self: end
+	align-items: end
+	grid-template-columns: 1fr 1fr
+	height: 30px
+	font-family: "TTCommonsLight", sans-serif
+	color: #fff
+	.left
+		display: grid
+		grid-template-columns: auto 1fr
+		grid-gap: 30px
+	.right
+		justify-self: end
+	a
+		font-family: "TTCommonsLight", sans-serif
+		font-size: 24px
+		color: #fff
+
+//ALWAYS END
+@import "media"
